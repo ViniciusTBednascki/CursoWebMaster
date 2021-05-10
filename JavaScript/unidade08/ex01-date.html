@@ -2,8 +2,17 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            const meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezemmbro"];
+            const dias_da_semana = ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sabado"];   
+            var hoje = new Date();
+            var nascimento = new Date(1998,10,12);
+            var hoje_extendido, nascimento_extendido;
 
+            hoje_extendido = dias_da_semana[hoje.getDay()]+", "+hoje.getDate()+" de "+meses[hoje.getMonth()]+" de "+hoje.getFullYear()
+            console.log(hoje_extendido);
             
+            nascimento_extendido = dias_da_semana[nascimento.getDay()]+", "+nascimento.getDate()+" de "+meses[nascimento.getMonth()]+" de "+nascimento.getFullYear()
+            console.log(nascimento_extendido);
         </script>
     </head>
     <body>
