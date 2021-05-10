@@ -2,10 +2,17 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var bonus;
+            bonus = 50;
             function calcularDiaria(salario,dias) {
+                var bonus;
+                bonus = 100;
+
+                console.log("bonus dentro da função: "+bonus);
                 return (salario/dias).toFixed(2);    
             }
             
+            console.log("bonus fora da função: "+bonus)
             var diaria = calcularDiaria(8000,30);
             alert(diaria);
         </script>
