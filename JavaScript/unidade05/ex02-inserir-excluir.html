@@ -4,6 +4,27 @@
         <script>
             var salada = ["Uva","Banana","Pera"] ;
             console.log(salada);
+            console.log("Número de elementos: " + salada.length);
+
+            //adcionar ao final
+            salada.push("Mamão");
+            console.log(salada);
+            console.log("Número de elementos: " + salada.length);
+
+            //adcionar no ínicio
+            salada.unshift("Laranja");
+            console.log(salada);
+            console.log("Número de elementos: " + salada.length);
+
+            //excluir ultimo elemento
+            salada.pop();
+            console.log(salada);
+            console.log("Número de elementos: " + salada.length);
+            
+            //excluir primeiro elemento
+            salada.shift();
+            console.log(salada);
+            console.log("Número de elementos: " + salada.length);
         </script>
     </head>
     <body>
