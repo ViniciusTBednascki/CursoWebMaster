@@ -2,7 +2,19 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            var texto = "Curso JavaScript fundamental"
+            var palavra = texto.substr(0,5);
+            console.log(palavra);
+
+            var primeira_palavra = "";
+            var letra = "";
+            var i =0;
+            while(letra != " "){
+                primeira_palavra = texto.substr(0,i);
+                letra = texto.charAt(i++);
+            }
+
+            console.log(primeira_palavra);
         </script>
     </head>
     <body>
