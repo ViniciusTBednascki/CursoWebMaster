@@ -2,7 +2,15 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            function doisDigitos(tempo){
+                if(tempo < 10){
+                    return "0"+tempo;
+                }
+                return tempo;
+            }
+            var agora = new Date();
+
+            console.log(doisDigitos(agora.getHours()) + ":" + doisDigitos(agora.getMinutes()) + ":" + doisDigitos(agora.getSeconds()));
         </script>
     </head>
     <body>
