@@ -2,7 +2,19 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var nome = "JOÃO LIMA MACHADO"
+            var nome_minusculo = nome.toLowerCase();
+            var nome_separado = nome_minusculo.split(" ");
+            var palavra, primeira_letra, nome_capitalizado;
 
+            for(var i = 0; i < nome_separado.length; i++){
+                palavra = nome_separado[i];
+                primeira_letra = palavra.charAt(0);
+                nome_separado[i] = primeira_letra.toUpperCase() + palavra.substr(1,palavra.length);
+            }
+
+            nome_capitalizado = nome_separado.join(" ");
+            console.log(nome_capitalizado);
         </script>
     </head>
     <body>
