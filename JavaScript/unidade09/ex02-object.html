@@ -2,7 +2,16 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var objeto = {
+                nome: "Caneta",
+                preco: 1.99,
+                cor: "Azul",
+                pordutoInfo() {
+                    return "Descrição:\nNome:"+this.nome+", custo:"+this.preco+", cor:"+this.cor;
+                }
+            };
 
+            console.log(objeto.pordutoInfo());
         </script>
     </head>
     <body>
