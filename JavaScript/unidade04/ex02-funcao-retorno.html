@@ -2,7 +2,13 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-        
+            function converterParaFarenheits(celsius){
+                var fah = (celsius * 1.8) + 32;
+                return fah;
+            }
+
+            var fah = converterParaFarenheits(37.5);
+            console.log(fah);
         </script>
     </head>
     <body>
