@@ -11,7 +11,11 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
+				console.log("Posição top do elemento: " + $("div#janela").position().top);
+                console.log("Posição left do elemento: " + $("div#janela").position().left);
+
+                console.log("Posição top do elemento: " + $("div#janelinha").offset().top);
+                console.log("Posição left do elemento: " + $("div#janelinha").offset().left);
 			});
 		</script>        
     </head>
