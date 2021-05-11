@@ -25,13 +25,17 @@
 			
 			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
 			nav li:nth-child(2) { background-image:url(imagem/basquete.png) }
-					
+			
+			#primeira {width: 300px; height: 500px; background-color: #096;}
+			#segunda {width: 300px; height: 500px; background-color: #609;}
         </style>
          
         <script src="jquery-3.2.1.min.js"></script>
         <script>		
 			$( function(e) { 	
-
+				$("nav li:nth(1)").click(function(e) {
+					$("html,body").animate({scrollTop:50},500);
+				})
 			});			
 		</script>   
     </head>
@@ -42,5 +46,8 @@
             	<li id="tela2"></li>
             </ul>
         </nav>
+
+		<div id="primeira"></div>
+		<div id="segunda"></div>
     </body>
 </html>
