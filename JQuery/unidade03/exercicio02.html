@@ -11,15 +11,22 @@
             <a href="#">Argentina</a>
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
+            <a href="#">Colombia</a>
         </nav>
+
+        <a href="#">Peru</a>
         
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
         <script>    
-        	$( function() {
-				
-			})
+        	alert("Essa página possui " + $("a").length + " links");
+            alert("mas apenas " + $("nav a").length + " dentro do nav.");
+
+            $(function() {
+                $("nav a:odd").css("color","red").css("text-decoration","none").css("display","block");
+                $("nav a:last").css("color","orange").css("text-decoration","none").css("display","block");
+                $("nav a:contains('Brasil')").css("color","green").css("text-decoration","none").css("display","block");
+            });
         </script>   
-                
     </body>
 </html>
