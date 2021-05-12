@@ -28,27 +28,29 @@
 			nav li:nth-child(2) { background-image:url(imagem/basquete.png) } 
 			nav li:last-child 	{ background-image:url(imagem/tenis.png) } 
 		
-			#primeira 	{ width:300px; height:600px; background-color:#066 }
-			#segunda 	{ width:300px; height:600px; background-color:#933 }
-			#terceira 	{ width:300px; height:600px; background-color:#F93 }
+			#primeira 	{ width:100%; background-color:#066 }
+			#segunda 	{ width:100%; background-color:#933 }
+			#terceira 	{ width:100%; background-color:#F93 }
 			
         </style>
          
         <script src="jquery-3.2.1.min.js"></script>
         <script>		
-			$( function(e) { 	
+			$( function(e) {
+				var alturaJanela = $(window).height();
+				$('.janela').css('height',alturaJanela);
 
 				// eventos
 				$('nav li:nth-child(1)').click(function() {
-					$("html, body").animate({scrollTop: $('#primeira').offset().top }, 1000);				
+					$("html, body").animate({scrollTop: $('#primeira').offset().top }, 500);				
 				});
 								
 				$('nav li:nth-child(2)').click(function() {
-					$("html, body").animate({scrollTop: $('#segunda').offset().top }, 1000);				
+					$("html, body").animate({scrollTop: $('#segunda').offset().top }, 500);				
 				});
 
 				$('nav li:nth-child(3)').click(function() {
-					$("html, body").animate({scrollTop: $('#terceira').offset().top }, 1000);				
+					$("html, body").animate({scrollTop: $('#terceira').offset().top }, 500);				
 				});
 
 			});			
@@ -63,9 +65,9 @@
             </ul>
         </nav>
         
-        <div id="primeira"></div>
-        <div id="segunda"></div>
-        <div id="terceira"></div>
+        <div id="primeira" class="janela"></div>
+        <div id="segunda" class="janela"></div>
+        <div id="terceira" class="janela"></div>
 
     </body>
 
