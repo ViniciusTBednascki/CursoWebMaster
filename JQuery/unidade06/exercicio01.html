@@ -6,7 +6,25 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-					
+            $(function() {
+                $('#cursohtml').click(function() {
+                    alert("Você clicou no botão HTML");
+                })
+
+                function eventoMouse() {
+                    alert("Passou pelo botão CSS");
+                    $('#cursocss').off('mouseover', eventoMouse)
+                }
+                function eventoClick() {
+                    alert("Você clicou no botão CSS");
+                }
+
+                $('#cursocss').on('mouseover', eventoMouse).on('click', eventoClick);
+
+                /*$('input[type="button"]').click(function() {
+                    alert(`Você clicou em ${this.value}`);
+                })*/
+            })
 		</script>        
     </head>
 
