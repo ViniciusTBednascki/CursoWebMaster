@@ -9,8 +9,12 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {			
+            function moverObjeto() {
+                $('#janela').animate({left: 300, opacity: 'toggle'}, 500, "linear")
+            }
 
+			$( function(e) {			
+                $('#direita').click(moverObjeto)
 			})
 
 		</script>        
