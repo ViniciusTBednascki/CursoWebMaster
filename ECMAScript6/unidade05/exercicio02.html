@@ -3,8 +3,17 @@
         <title>Curso de EcmaScript 6.0</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
-        
+            var estatisticas = {
+                gol(qtd) {
+                    console.log("gol ".repeat(qtd));
+                },
+                falta(qtd) {
+                  console.log("falta ".repeat(qtd));
+                }
+            };
 
+            estatisticas.gol(3);
+            estatisticas.falta(5);
         </script>
     </head>
     <body>
