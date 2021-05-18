@@ -3,8 +3,25 @@
         <title>Curso de EcmaScript 6.0</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
-        
+            class Produto {
+                constructor(nome, preco) {
+                    this.nome = nome;
+                    this.preco = preco;
+                }
 
+                escreverDados() {
+                    console.log(`Meu/Minha ${this.nome} custa ${this.preco} reais`)
+                }
+            }
+
+            var caneta = new Produto();
+            caneta.nome = "Caneta Bic";
+            caneta.preco = 2;
+
+            var isqueiro = new Produto("Isqueiro Bic", 3);
+
+            caneta.escreverDados()
+            isqueiro.escreverDados();
         </script>
     </head>
     <body>
